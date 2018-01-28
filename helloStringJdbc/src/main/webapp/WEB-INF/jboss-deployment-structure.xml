@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+	<deployment>
+		<dependencies>
+			<module name="config.siview.hellospringjdbc" />
+			<module name="config.siview.simplebean" />
+			<module name="config.persistence">
+				<imports>
+					<include path="META-INF**"/>
+                </imports>
+            </module>
+			<module name="idv.tim.simplebean" />
+			<module name="com.oracle.db" />
+		</dependencies>
+		<exclusions>
+			<module name="org.apache.log4j" />
+		</exclusions>
+	</deployment>
+</jboss-deployment-structure>
